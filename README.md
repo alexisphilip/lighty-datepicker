@@ -8,7 +8,7 @@ datepicker(s) when clicking on an input.
 
 ## Usage
 
-It is very simple. Simply include `lighty-datepicker.js` or `lighty-datepicker.min.js` and add `light-datepicker` class
+It is very simple. Simply include `lighty-datepicker.js` or `lighty-datepicker.min.js` and add `lighty-datepicker` class
 to the `input` element.
 
 ```html
