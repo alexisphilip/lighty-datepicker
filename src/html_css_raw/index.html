@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>lighty-datepicker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<!-- lighty-datepicker : tout le contenu ci-dessous est crée dynamiquement. -->
+
+<div class="ldp">
+
+	<!-- HEADER : créé dynamiquement lors de l'intanciation du programme -> créé une seule fois. -->
+
+	<div class="ldp-header">
+
+		<div class="ldp-header-row">
+			<div class="ldp-btn day-up">
+				<svg class="ldp-icon-arrow-up day-up" width="64" height="64" viewBox="0 0 64 64">
+					<!-- Voici le SVG complet. Il est normalement répété à la suite du code. -->
+					<path class="ldp-icon-color" d="M3.352,48.296l28.56-28.328l28.58,28.347c0.397,0.394,0.917,0.59,1.436,0.59c0.52,0,1.04-0.196,1.436-0.59   c0.793-0.787,0.793-2.062,0-2.849l-29.98-29.735c-0.2-0.2-0.494-0.375-0.757-0.475c-0.75-0.282-1.597-0.107-2.166,0.456   L0.479,45.447c-0.793,0.787-0.793,2.062,0,2.849C1.273,49.082,2.558,49.082,3.352,48.296z">
+						
+					</path>
+				</svg>
+			</div>
+			<div class="ldp-output output-day" data-value="2019-03-08">8</div>
+			<div class="ldp-btn day-down">
+				<svg class="ldp-icon-arrow-down day-down" width="64" height="64" viewBox="0 0 64 64">
+					<path class="ldp-icon-color" d="M3.352,48" />
+				</svg>
+			</div>
+		</div>
+
+		<div class="ldp-header-row">
+			<div class="ldp-btn month-up">
+				<svg class="ldp-icon-arrow-up month-up" width="64" height="64" viewBox="0 0 64 64">
+					<path class="ldp-icon-color" d="M3.352,48" />
+				</svg>
+			</div>
+			<div class="ldp-output output-month">MARS</div>
+			<div class="ldp-btn month-down">
+				<svg class="ldp-icon-arrow-down month-down" width="64" height="64" viewBox="0 0 64 64">
+					<path class="ldp-icon-color" d="M3.352,48" />
+				</svg>
+			</div>
+		</div>
+
+		<div class="ldp-header-row">
+			<div class="ldp-btn year-up">
+				<svg class="ldp-icon-arrow-up year-up" width="64" height="64" viewBox="0 0 64 64">
+					<path class="ldp-icon-color" d="M3.352,48" />
+				</svg>
+			</div>
+			<div class="ldp-output output-year">2019</div>
+			<div class="ldp-btn year-down">
+				<svg class="ldp-icon-arrow-up year-up" width="64" height="64" viewBox="0 0 64 64">
+					<path class="ldp-icon-color" d="M3.352,48" />
+				</svg>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- CALENDAR : créé dynamiquement puis détruit et recréé lors de chaque sélection de date. -->
+	<div class="ldp-calendar">
+
+		<div class="ldp-calendar-header">
+			<!-- Jours de la semaine. -->
+			<div class="ldp-cell">L</div>
+			<div class="ldp-cell">M</div>
+			<div class="ldp-cell">M</div>
+			<div class="ldp-cell">J</div>
+			<div class="ldp-cell">V</div>
+			<div class="ldp-cell">S</div>
+			<div class="ldp-cell">D</div>
+		</div>
+
+		<div class="ldp-calendar-body">
+
+			<div class="ldp-row">
+				<!-- Case vide - remplit par un point. -->
+				<div class="ldp-cell"><div class="ldp-dot"></div></div>
+				<div class="ldp-cell"><div class="ldp-dot"></div></div>
+				<div class="ldp-cell"><div class="ldp-dot"></div></div>
+				<div class="ldp-cell"><div class="ldp-dot"></div></div>
+				<!-- Case numérotée - remplit par une date. -->
+				<div class="ldp-cell ldp-filled" data-value="2019-03-01">1</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-02">2</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-03">3</div>
+			</div>
+			<div class="ldp-row">
+				<div class="ldp-cell ldp-filled" data-value="2019-03-04">4</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-05">5</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-06">6</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-07">7</div>
+				<!-- Case sélectionnée. -->
+				<div class="ldp-cell ldp-filled ldp-selected" data-value="2019-03-08">8</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-09">9</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-10">10</div>
+			</div>
+			<div class="ldp-row">
+				<div class="ldp-cell ldp-filled" data-value="2019-03-11">11</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-12">12</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-13">13</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-14">14</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-15">15</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-16">16</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-17">17</div>
+			</div>
+			<div class="ldp-row">
+				<div class="ldp-cell ldp-filled" data-value="2019-03-18">18</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-19">19</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-20">20</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-21">21</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-22">22</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-23">23</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-24">24</div>
+			</div>
+			<div class="ldp-row">
+				<div class="ldp-cell ldp-filled" data-value="2019-03-25">25</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-26">26</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-27">27</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-28">28</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-29">29</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-30">30</div>
+				<div class="ldp-cell ldp-filled" data-value="2019-03-31">31</div>
+			</div>
+			<div class="ldp-row">
+				<div class="ldp-cell"><div class="ldp-dot"></div></div>
+				<div class="ldp-cell"><div class="ldp-dot"></div></div>
+				<div class="ldp-cell"><div class="ldp-dot"></div></div>
+				<div class="ldp-cell"><div class="ldp-dot"></div></div>
+				<div class="ldp-cell"><div class="ldp-dot"></div></div>
+				<div class="ldp-cell"><div class="ldp-dot"></div></div>
+				<div class="ldp-cell"><div class="ldp-dot"></div></div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- Fin datepicker. -->
+
+<!-- Un <input> avec la classe "lighty-datepicker" suffit pour instancier et construire le datepicker. -->
+<input class="lighty-datepicker" type="text">
+
+<!-- Il peut y avoir plusieurs classes dans la même input. Tant que "lighty-datepicker" est appellé, il fonctionnera. -->
+<input class="first-class lighty-datepicker other-class">
+
+<!-- Des parametres colorimétriques peuvent être passés au datepicker par l'attribute "data".
+
+data: lighty-datepicker
+
+paramètres: - width ;
+		    - bg_header ;
+			- color_header ;
+			- bg_calendar ;
+			- color_calendar ;
+			- bg_icon.
+ -->
+<input class="lighty-datepicker" data-lighty_datepicker="background_header: tomato; color_calendar: lightgrey;">
+
+</body>
+</html>
