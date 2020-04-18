@@ -1,0 +1,92 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', Calibri;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+body {
+	background-image: linear-gradient(to right top, #ff6347, #db5670, #a55980, #705873, #4f4f4f);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.example-container {
+	height: 90%;
+	width: 800px;
+	padding: 50px auto;
+}
+
+.example-row {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.input-container {
+	width: 120px;
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	width: 100%;
+	font-size: 1.2em;
+	width: 120px;
+	padding: 7px 9px;
+	border: none;
+    color: white;
+    background: rgba(0,0,0, 0.3);
+}
+
+label {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+}
+
+
+.input-1 {
+	
+}
+
+.input-2 {
+
+}
+
+.input-3 {
+
+}
+
+.example {
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+}
+
+.content {
+	width: 100%;
+}
+
+.ex-title {
+	text-align: center;
+	padding: bottom;
+	font-weight: 800;
+	padding-bottom: 50px;
+}
+
+.ex-content {
+	text-align: center;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
