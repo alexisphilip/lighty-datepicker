@@ -3,6 +3,8 @@
 `lighty-datepicker.js` is a plain JavaScript library allowing its user to easily access one or multiple
 datepicker(s) when clicking on an input.
 
+Demo: https://www.alexisphilip.fr/demo/lighty-datepicker
+
 > Warning: all the comments in the source code are written in French, as I wrote this code a long time ago, not thinking
 > it could be used by people throughout the world.
 
@@ -49,6 +51,4 @@ This project is licensed under the [MIT License](https://choosealicense.com/lice
 
 ## Author
 
-Alexis Philip ([Website](https://alexisphilip.fr),
-[GitHub](https://github.com/alexis-philip),
-[LinkedIn](https://www.linkedin.com/in/alexis-philip-019955176)). 
+Alexis Philip ([Website](https://www.alexisphilip.fr)). 
